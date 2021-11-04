@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bmccn" />
+    <meta name="twitter:title" content="BMCCN" />
+    <meta name="twitter:description"
+        content="Blooming Minds Change Champions Network is an early intervention youth development organisation" />
+
+    <meta name="twitter:image"
+        content="https://i0.wp.com/bmccn.org/wp-content/uploads/2020/01/IMG-20190722-WA0012.jpg?resize=1024%2C678&ssl=1" />
+    <meta name="twitter:creator" content="@bmccn" />
+    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BMCCN" />
+    <meta property="og:description"
+        content="Blooming Minds Change Champions Network is an early intervention youth development organisation" />
+
+    <meta property="og:image"
+        content="https://i0.wp.com/bmccn.org/wp-content/uploads/2020/01/IMG-20190722-WA0012.jpg?resize=1024%2C678&ssl=1" />
+    <meta property="description"
+        content="Blooming Minds Change Champions Network is an early intervention youth development organisation" />
+
+
+    <title>Equip. Empower. Elevate. - BMCCN</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('images/favicon/site.webmanifest') }}">
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    @stack('styles')
+</head>
+
+<body>
+
+    <!-- Header -->
+    <x-front.header />
+
+    <main>
+        {{ $slot }}
+    </main>
+
+    <!-- Footer -->
+    <x-front.footer />
+
+    <!--scripts -->
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    @stack('scripts')
+
+</body>
+
+</html>

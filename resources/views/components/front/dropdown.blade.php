@@ -23,7 +23,7 @@
         x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0"
         x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 translate-y-1"
-        class="absolute text-center z-20 w-full py-3 px-1 my-3 -mr-3 space-y-1 transform text-blue-black bg-white shadow-lg lg:-ml-24 lg:left-1/2 md:w-40 ring-1 ring-black ring-opacity-5 rounded"
+        class="absolute text-center z-20 py-3 px-1 my-3 space-y-1 transform text-blue-black bg-white shadow-lg lg:-ml-24 lg:left-1/2 w-64 rounded"
         style="display: none;">
 
         {{ $slot }}

@@ -3,7 +3,7 @@
 <div x-data="{ isOpen: false,  hover: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
     class="w-auto" x-cloak>
     <div @mouseenter="hover = true" @mouseleave="hover = false" href="#"
-        class="inline-flex px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+        class="inline-flex px-3 py-2 rounded-md text-base font-medium text-blue-black hover:text-red-950">
         <span>{{ $name }}</span>
         <svg class="w-5 h-5 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
