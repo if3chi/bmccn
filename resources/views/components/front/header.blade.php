@@ -1,4 +1,4 @@
-<header class="relative z-10 fade-in" x-data="{ showMenu: false }">
+<header class="relative z-10 fade-in shadow-md" x-data="{ showMenu: false }">
     <div class="">
         <nav class="relative max-w-7xl mx-auto flex items-center justify-between py-4 px-6 xl:px-8" aria-label="Global">
             <div class="flex items-center justify-between w-full lg:w-auto">

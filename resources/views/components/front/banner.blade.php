@@ -1,7 +1,7 @@
 <div class="mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide relative pt-16 pb-32 flex content-center items-center justify-center"
-            style="min-height: 89vh;">
+            style="min-height: 90vh;">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
                 style='background-image: url("{{ asset('images/banner/1.jpg') }}");'>
                 <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
@@ -13,9 +13,9 @@
                             <h1 class="text-white font-semibold text-5xl">
                                 Equip.
                             </h1>
-                            <p class="mt-4 text-2xl text-gray-100 tracking-wide">
-                                Aimed at tackling the challenges young people face in their community by building
-                                and equipping a network of young people
+                            <p class="mt-5 text-2xl text-gray-100 tracking-wide">
+                                Provide support and resources for young people to take action and make decisions that
+                                are impactful.
                             </p>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="swiper-slide relative pt-16 pb-32 flex content-center items-center justify-center"
-            style="min-height: 89vh;">
+            style="min-height: 90vh;">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
                 style='background-image: url("{{ asset('images/banner/2.jpg') }}");'>
                 <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
@@ -43,8 +43,9 @@
                             <h1 class="text-white font-semibold text-5xl">
                                 Empower.
                             </h1>
-                            <p class="mt-4 text-2xl text-gray-100 tracking-wide">
-                                Community by building and equipping a network of young people
+                            <p class="mt-5 text-2xl text-gray-100 tracking-wide">
+                                Engage in transformative operations that are geared towards life enhancements and
+                                building an active youth force.
                             </p>
                         </div>
                     </div>
@@ -60,7 +61,7 @@
             </div>
         </div>
         <div class="swiper-slide relative pt-16 pb-32 flex content-center items-center justify-center"
-            style="min-height: 89vh;">
+            style="min-height: 90vh;">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
                 style='background-image: url("{{ asset('images/banner/3.jpg') }}");'>
                 <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
@@ -72,7 +73,7 @@
                             <h1 class="text-white font-semibold text-5xl">
                                 Elevate.
                             </h1>
-                            <p class="mt-4 text-2xl text-gray-100 tracking-wide">
+                            <p class="mt-5 text-2xl text-gray-100 tracking-wide">
                                 Aimed at tackling the challenges young people face in their community by building
                                 and equipping a network of young people
                             </p>
