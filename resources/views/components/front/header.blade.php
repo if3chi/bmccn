@@ -24,7 +24,7 @@
             <div class="hidden space-x-10 lg:flex lg:ml-10">
 
                 <x-front.nav-link href="/">Home</x-front.nav-link>
-                <x-front.nav-link href="#about">About</x-front.nav-link>
+                <x-front.nav-link href="{{ url('/').'#about' }}">About</x-front.nav-link>
                 <x-front.dropdown url="#" name="Community Projects">
                     <div>
                         <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
@@ -76,7 +76,7 @@
             </div>
             <div class="pt-5 pb-6">
                 <div class="px-2 space-y-1 text-center">
-                    <a href="#"
+                    <a href="{{ url('/').'#about' }}"
                         class="block px-3 py-2 rounded-md text-base font-medium text-blue-black hover:bg-gray-50">About</a>
 
                     <x-front.dropdown-base name="Community Projects">
