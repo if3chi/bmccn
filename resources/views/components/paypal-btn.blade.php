@@ -1,5 +1,5 @@
 <a
-    {{ $attributes->merge(['class' => 'flex space-x-1 py-2 px-6 bg-white border-2 border-transparent rounded-md shadow-md text-base font-medium text-blue-950 hover:bg-gray-50']) }}>
+    {{ $attributes->merge(['class' => 'flex space-x-1 py-2 px-6 bg-white border-2 border-transparent rounded-md shadow-md text-base font-medium text-blue-950 hover:text-white hover:bg-blue-black hover:border-white']) }}>
     <span>Donate</span>
     <span class="p-1 mt-0.5">
         <svg class="w-4 h-4" viewBox="0 0 24 32">
