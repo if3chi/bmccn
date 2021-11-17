@@ -33,7 +33,7 @@
                         <ul class="list-unstyled">
                             <li>
                                 <a class="text-gray-700 hover:text-blue-black font-semibold block pb-2 text-sm"
-                                    href="#about">About Us</a>
+                                    href="{{ url('/').'#about' }}">About Us</a>
                             </li>
                             <li>
                                 <a class="text-gray-700 hover:text-blue-black font-semibold block pb-2 text-sm"
@@ -59,7 +59,7 @@
                             </li>
                             <li>
                                 <a class="text-gray-700 hover:text-blue-black font-semibold block pb-2 text-sm"
-                                    href="#contact-us">Contact Us</a>
+                                    href="{{ url('/').'#contact-us' }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

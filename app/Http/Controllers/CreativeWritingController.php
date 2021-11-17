@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\CreativeWriting;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\EssaySubmissionRecieved;
+use App\Http\Requests\CreativeWritingRequest;
 
 class CreativeWritingController extends Controller
 {
@@ -23,9 +25,23 @@ class CreativeWritingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreativeWritingRequest $request)
     {
-        return view('front.creative-writing');
+
+        $validatedData = $request->validated();
+        $validatedData['essay'] = textNl2br($validatedData['essay']);
+
+        $creativeWriting = CreativeWriting::create($validatedData);
+
+        if ($creativeWriting) {
+
+            Mail::to($creativeWriting->email)
+                ->queue(new EssaySubmissionRecieved($creativeWriting->lastname));
+
+            session()->flash('essay', "Essay submitted successfully, Kindly check the email you provided for more details.");
+        }
+
+        return back();
     }
 
     /**
@@ -57,7 +73,7 @@ class CreativeWritingController extends Controller
      * @param  \App\Models\CreativeWriting  $creativeWriting
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CreativeWriting $creativeWriting)
+    public function update(CreativeWritingRequest $request, CreativeWriting $creativeWriting)
     {
         //
     }

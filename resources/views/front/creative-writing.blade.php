@@ -12,7 +12,8 @@
             <div class="flex flex-wrap mt-12 justify-center">
                 <div class="w-full lg:w-3/12 px-4 text-center space-y-3">
 
-                    <x-paypal-btn href="https://www.paypal.com/donate/?hosted_button_id=ZSE7RS78U6QF4" class="justify-center shadow-xl" />
+                    <x-paypal-btn href="https://www.paypal.com/donate/?hosted_button_id=ZSE7RS78U6QF4"
+                        class="justify-center shadow-xl" />
 
                     {{-- <h6 class="text-xl mt-5 font-semibold text-white">
                         Support the change
@@ -27,6 +28,11 @@
 
     <section class="block py-24 lg:pt-0 bg-white fade-in"
         style="background-image: url(https://static.intercomassets.com/ember/assets/images/messenger-backgrounds/background-1-99a36524645be823aabcd0e673cb47f8.png)">
+        
+        @if (session('essay'))
+            <x-alert>{{ session('essay') }}</x-alert>
+        @endif
+        
         <div class="relative">
             <div class="container mx-auto px-4 mt-16 lg:mt-0">
                 <div class="flex flex-wrap justify-center">
@@ -37,31 +43,37 @@
                             <div class="flex-auto p-5 lg:p-10">
                                 <h4 class="text-2xl font-semibold text-white">Submit Your Entry</h4>
 
-                                <x-input.text name="firstname" value="" type="text" id="first-name"
-                                    placeholder="First Name">First Name</x-input.text>
+                                <x-input.text name="firstname" value="{{ old('firstname') }}" type="text"
+                                    id="first-name" placeholder="First Name" :error="$errors->first('firstname')">First
+                                    Name</x-input.text>
 
-                                <x-input.text name="lastname" value="" type="text" id="last-name"
-                                    placeholder="Last Name">Last Name</x-input.text>
+                                <x-input.text name="lastname" value="{{ old('lastname') }}" type="text" id="last-name"
+                                    placeholder="Last Name" :error="$errors->first('lastname')">Last Name</x-input.text>
 
-                                <x-input.text name="phone" value="" type="phone" id="phone" placeholder="0201234567">
+                                <x-input.text name="phone" value="{{ old('phone') }}" type="phone" id="phone"
+                                    placeholder="0201234567" :error="$errors->first('phone')">
                                     Phone</x-input.text>
 
-                                <x-input.text name="email" value="" type="email" id="email" placeholder="Email">Email
+                                <x-input.text name="email" value="{{ old('email') }}" type="email" id="email"
+                                    placeholder="Email" :error="$errors->first('email')">Email
                                 </x-input.text>
 
-                                <x-input.text name="age" value="" type="number" id="age" placeholder="Age" min="6"
-                                    max="15">Age</x-input.text>
+                                <x-input.text name="age" value="{{ old('age') }}" type="number" id="age"
+                                    placeholder="Age" min="6" max="15" :error="$errors->first('age')">Age</x-input.text>
 
-                                <x-input.text name="title" value="" type="text" id="title" placeholder="Essay Title">
+                                <x-input.text name="title" value="{{ old('title') }}" type="text" id="title"
+                                    placeholder="Essay Title" :error="$errors->first('title')">
                                     Title</x-input.text>
 
-                                <x-input.textarea id="essay" placeholder="Type your Essay...">Essay</x-input.textarea>
+                                <x-input.textarea name="essay" textValue="{{ old('essay') }}" id="essay"
+                                    placeholder="Type your Essay..." :error="$errors->first('essay')">Essay
+                                </x-input.textarea>
 
                                 <div class="text-center mt-6">
                                     <button
                                         class="bg-white text-blue-black active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded-md shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                                         type="submit" style="transition: all 0.15s ease 0s;">
-                                        Submit Entry
+                                        Submit Essay
                                     </button>
 
                                 </div>
