@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CreativeWritingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/creative-writing', CreativeWritingController::class)->except(['create', 'destroy']);
+Route::view('/creative-writing', 'front.creative-writing')->name('creative-writing');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

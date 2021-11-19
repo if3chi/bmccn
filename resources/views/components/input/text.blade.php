@@ -8,7 +8,7 @@
         style="transition: all 0.15s ease 0s;">
 
         @if ($error)
-            <p class="text-sm font-bold mt-2 text-red-500 tracking-wide">
+            <p class="text-sm font-bold mt-2 text-red-500">
                 {{ $error }}
             </p>
         @endif

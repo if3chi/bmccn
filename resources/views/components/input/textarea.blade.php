@@ -9,7 +9,7 @@
         rows="6" cols="80">{{ $textValue }}</textarea>
 
     @if ($error)
-        <p class="text-sm font-bold mt-2 text-red-500 tracking-wide">
+        <p class="text-sm font-bold mt-2 text-red-500">
             {{ $error }}
         </p>
     @endif

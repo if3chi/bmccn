@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Livewire\Component;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -21,8 +23,14 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
-        //
+        if (env('APP_ENV') === 'production') {
+            $url->forceScheme('https');
+        }
+
+        Component::macro('notify', function ($options) {
+            $this->dispatchBrowserEvent('swal', $options);
+        });
     }
 }

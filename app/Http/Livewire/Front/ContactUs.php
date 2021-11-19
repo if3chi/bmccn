@@ -15,7 +15,7 @@ class ContactUs extends Component
     public $rules = [
         'fullname' => 'required|string|max:255',
         'email' => 'required|email',
-        'message' => 'required|string'
+        'message' => 'required|string|max:5000'
     ];
 
     public function sendMessage()
@@ -24,7 +24,7 @@ class ContactUs extends Component
         Mail::to('care@bmccn.org')->queue(new ContactUsMail($validatedData));
         $this->reset(['fullname', 'email', 'message']);
 
-        $this->dispatchBrowserEvent('swal', [
+        $this->notify([
             'titleText' => 'Message Sent',
             'text' => 'We will get back to you at the soonest.',
             'icon' => 'success',

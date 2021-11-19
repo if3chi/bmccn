@@ -63,9 +63,29 @@
     <script>
         window.addEventListener('swal', function(e) {
 
+            let positions = {
+                'top': {
+                    position: 'top-end',
+                    showClass: {
+                        popup: 'animate__animated animate__slideInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__slideOutUp'
+                    },
+                },
+                'bottom': {
+                    position: 'bottom-end',
+                    showClass: {
+                        popup: 'animate__animated animate__slideInUp'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__slideOutDown'
+                    },
+                },
+            }
+
             const Toast = Swal.mixin({
                 toast: true,
-                position: 'bottom-start',
                 showConfirmButton: false,
                 timer: 3555,
                 timerProgressBar: true,
@@ -73,16 +93,14 @@
                     toast.addEventListener('mouseenter', Swal.stopTimer)
                     toast.addEventListener('mouseleave', Swal.resumeTimer)
                 },
-                showClass: {
-                    popup: 'animate__animated animate__slideInUp'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__slideOutDown'
-                },
-                footer: "<img class='h-5 w-auto text-left mr-14' src='{{ asset('images/logo.png') }}' alt='BMCCN Logo'>"
+                footer: "<img class='h-5 w-auto text-left mr-14' src='{{ asset('images/logo.png') }}' alt='BMCCN Logo'>",
+                ...positions['bottom']
             })
 
-            Toast.fire(e.detail)
+            Toast.fire({
+                ...e.detail,
+                ...positions[e.detail.position]
+            })
         });
     </script>
 
