@@ -37,6 +37,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     @stack('styles')
+    @livewireStyles
 </head>
 
 <body>
@@ -54,9 +55,39 @@
     <!--scripts -->
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
 
     @stack('scripts')
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        window.addEventListener('swal', function(e) {
+
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'bottom-start',
+                showConfirmButton: false,
+                timer: 3555,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                },
+                showClass: {
+                    popup: 'animate__animated animate__slideInUp'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__slideOutDown'
+                },
+                footer: "<img class='h-5 w-auto text-left mr-14' src='{{ asset('images/logo.png') }}' alt='BMCCN Logo'>"
+            })
+
+            Toast.fire(e.detail)
+        });
+    </script>
+
+    @livewireScripts
+    <script src="//unpkg.com/alpinejs" defer></script>
 
 </body>
 
