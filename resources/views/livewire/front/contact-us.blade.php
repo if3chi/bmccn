@@ -3,7 +3,6 @@
         <div class="w-full lg:w-6/12 px-4">
             <form wire:submit.prevent="sendMessage"
                 class="flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 mt-10">
-                @csrf
                 <div class="flex-auto p-5 lg:p-10">
                     <h4 class="text-2xl font-semibold text-blue-black">Want to work with us?</h4>
                     <p class="leading-relaxed mt-1 mb-4 text-gray-600">
@@ -34,7 +33,8 @@
                     </div>
                     <div class="w-full mb-3">
                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            for="message">Message</label><textarea rows="4" cols="80" wire:model.delay="message" name="message"
+                            for="message">Message</label><textarea rows="4" cols="80" wire:model.delay="message"
+                            name="message"
                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                             placeholder="Type a message..."></textarea>
                         @error('message')

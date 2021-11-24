@@ -12,7 +12,7 @@
             <div class="flex flex-wrap mt-12 justify-center">
                 <div class="w-full lg:w-3/12 px-4 text-center space-y-3">
 
-                    <x-paypal-btn href="https://www.paypal.com/donate/?hosted_button_id=ZSE7RS78U6QF4"
+                    <x-paypal-btn href="{{ paypalLink('bmccn') }}"
                         class="justify-center shadow-xl" />
 
                     {{-- <h6 class="text-xl mt-5 font-semibold text-white">
@@ -20,7 +20,7 @@
                     </h6> --}}
 
                     <p class="mt-2 mb-4 text-gray-50">
-                        Support our creative writing competition.
+                       Click the button to support our creative writing competition.
                     </p>
                 </div>
             </div>

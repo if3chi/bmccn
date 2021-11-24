@@ -43,7 +43,7 @@
 
             </div>
             <div class="hidden lg:flex lg:items-center lg:space-x-6">
-                <x-paypal-btn href="https://www.paypal.com/donate/?hosted_button_id=DME4VFG9D37YJ" />
+                <x-paypal-btn href="{{ paypalLink('generic') }}" />
             </div>
         </nav>
     </div>
@@ -100,7 +100,7 @@
 
                 </div>
                 <div class="mt-6 px-5">
-                    <x-paypal-btn href="https://www.paypal.com/donate/?hosted_button_id=DME4VFG9D37YJ" class="justify-center" />
+                    <x-paypal-btn href="{{ paypalLink('generic') }}" class="justify-center" />
                 </div>
             </div>
         </div>
