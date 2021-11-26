@@ -91,18 +91,14 @@
                 </div>
             </div>
             <div class="flex flex-wrap mt-12 justify-center">
-                <div class="w-full lg:w-3/12 px-4 text-center space-y-3">
+                <div class="w-full lg:w-3/12 px-4 text-center space-y-3 -mb-8">
 
                     <x-paypal-btn href="{{ paypalLink('generic') }}"
                         class="justify-center shadow-xl" />
 
-                    {{-- <h6 class="text-xl mt-5 font-semibold text-white">
-                        Support the change
-                    </h6> --}}
-
-                    <p class="mt-2 mb-4 text-gray-50">
-                        Support our creative writing competition.
-                    </p>
+                    <h6 class="mt-2 mb-4 text-gray-50 text-lg font-semibold">
+                        Support our community projects.
+                    </h6>
                 </div>
             </div>
     </section>
