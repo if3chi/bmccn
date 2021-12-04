@@ -1,5 +1,13 @@
 <?php
 
+if (!function_exists('setAboutImage')) {
+
+    function setAboutImage()
+    {
+        return 'images/about.jpg';
+    }
+}
+
 if (!function_exists('textNl2br')) {
 
     function textNl2br($text)
@@ -7,7 +15,6 @@ if (!function_exists('textNl2br')) {
         return strtr($text, array("\r\n" => '<br/>', "\r" => '<br/>', "\n" => '<br/>'));
     }
 }
-
 
 if (!function_exists('paypalLink')) {
 
