@@ -4,7 +4,14 @@ if (!function_exists('setAboutImage')) {
 
     function setAboutImage()
     {
-        return 'images/about.jpg';
+        return asset('images/about.jpg');
+    }
+}
+if (!function_exists('setFlyer')) {
+
+    function setFlyer()
+    {
+        return asset('images/flyer.jpg');
     }
 }
 

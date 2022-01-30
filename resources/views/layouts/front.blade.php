@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
+    <meta name="description"
+        content="Blooming Minds Change Champions Network is an early intervention youth development organisation" />
+        
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@bmccn" />
     <meta name="twitter:title" content="BMCCN" />

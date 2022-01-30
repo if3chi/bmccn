@@ -20,8 +20,8 @@ module.exports = {
                 red: {
                     950: '#d01823'
                 }
-            }
-        },        
+            },
+        },
     },
 
     variants: {
@@ -30,5 +30,8 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/aspect-ratio'),
+    ],
 };

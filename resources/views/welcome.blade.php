@@ -26,7 +26,7 @@
                 <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                     <div
                         class="relative flex flex-col min-w-0 break-words w-full my-6 shadow-lg rounded-lg bg-blue-black">
-                        <img alt="..." src="{{ asset(setAboutImage()) }}" class="w-full align-middle rounded-t-lg">
+                        <img alt="..." src="{{ setAboutImage() }}" class="w-full align-middle rounded-t-lg">
                         <blockquote class="relative p-8 mb-4">
                             <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                 class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
@@ -45,14 +45,65 @@
         </div>
     </section>
 
-    <section class="pb-20 -my-2 relative block bg-blue-black fade-in">
-        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80px;">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-blue-black fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
+    <section class="pb-20 bg-white -mt-24 -mb-2 font-sans fade-in" id="art-info">
+        <div class="bg-white pt-16 lg:py-24">
+            <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div class="relative lg:-my-8">
+                        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+                        <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                            <div
+                                class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                <img class="object-cover lg:h-full lg:w-full shadow-inner" src="{{ setFlyer() }}"
+                                    alt="Achievers awards 2022 flyer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                        <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                            <blockquote>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-25"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                                        <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                                        <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                                        <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                                    </svg>
+                                    <p class="mt-4 text-2xl font-medium text-white">Open to all young artists, sculptors
+                                        and innovators in Ghana and Nigeria.</p>
+                                </div>
+                                <footer class="mt-2">
+                                    <p class="text-base font-medium text-white">NB: Send all application materials to <a
+                                            href="mailto:info@bmccn.org">info@bmccn.org</a></p>
+                                    <p class="text-base font-medium text-blue-100">Application deadline extended to
+                                        28th Feb, 2022.</p>
+                                    <a href="mailto:info@bmccn.org"
+                                        class="mt-4 bg-red-950 border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-semibold text-white hover:text-red-950 hover:bg-red-50">
+                                        Submit an entry
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 mt-1"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+                                            </path>
+                                            <path d="M3 6l9 6l9 -6"></path>
+                                            <path d="M15 18h6"></path>
+                                            <path d="M18 15l3 3l-3 3"></path>
+                                        </svg>
+                                    </a>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section class="pb-20 -my-2 relative block bg-blue-black fade-in">
         <div class="container mx-auto px-4 py-14 lg:pt-24 lg:pb-64">
             <div class="flex flex-wrap text-center justify-center">
                 <div class="w-full lg:w-6/12 px-4" id="contact-us">
