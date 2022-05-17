@@ -45,12 +45,12 @@
         </div>
     </section>
 
-    <section class="pb-20 bg-white -mt-24 -mb-2 font-sans fade-in" id="art-info">
+    {{-- <section class="pb-20 bg-white -mt-24 -mb-2 font-sans fade-in" id="art-info">
         <div class="bg-white pt-16 lg:py-24">
             <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
                 <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
                     <div class="relative lg:-my-8">
-                        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+                        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white -mt-1 lg:hidden"></div>
                         <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
                             <div
                                 class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
@@ -80,20 +80,39 @@
                                             href="mailto:info@bmccn.org">info@bmccn.org</a></p>
                                     <p class="text-base font-medium text-blue-100">Application deadline extended to
                                         28th Feb, 2022.</p>
-                                    <a href="mailto:info@bmccn.org"
-                                        class="mt-4 bg-red-950 border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-semibold text-white hover:text-red-950 hover:bg-red-50">
-                                        Submit an entry
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 mt-1"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
-                                            </path>
-                                            <path d="M3 6l9 6l9 -6"></path>
-                                            <path d="M15 18h6"></path>
-                                            <path d="M18 15l3 3l-3 3"></path>
-                                        </svg>
-                                    </a>
+                                    <div class="flex flex-col-reverse space-y-2 sm:flex-row space-x-2">
+                                        <a href="mailto:info@bmccn.org"
+                                            class="mt-4 bg-white justify-center border border-transparent rounded-md shadow-md px-2 py-2.5 inline-flex items-center text-base font-semibold text-blue-gray hover:text-red-950 hover:bg-red-50">
+                                            Register your interest
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 mt-1"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                                                <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                                                <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                                                <line x1="11" y1="6" x2="20" y2="6" />
+                                                <line x1="11" y1="12" x2="20" y2="12" />
+                                                <line x1="11" y1="18" x2="20" y2="18" />
+                                            </svg>
+                                        </a>
+                                        <span class="text-white text-lg mt-3 sm:mt-5 mx-auto ">or</span>
+                                        <a href="mailto:info@bmccn.org"
+                                            class="mt-4 bg-red-950 justify-center border border-transparent rounded-md shadow px-2 py-2.5 inline-flex items-center text-base font-semibold text-white hover:text-red-950 hover:bg-red-50">
+                                            Submit an entry
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 mt-1"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+                                                </path>
+                                                <path d="M3 6l9 6l9 -6"></path>
+                                                <path d="M15 18h6"></path>
+                                                <path d="M18 15l3 3l-3 3"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </footer>
                             </blockquote>
                         </div>
@@ -101,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="pb-20 -my-2 relative block bg-blue-black fade-in">
         <div class="container mx-auto px-4 py-14 lg:pt-24 lg:pb-64">

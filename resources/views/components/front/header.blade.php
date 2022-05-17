@@ -27,8 +27,8 @@
                 <x-front.nav-link href="{{ url('/') . '#about' }}">About</x-front.nav-link>
                 <x-front.dropdown url="#" name="Community Projects">
                     <div>
-                        <x-front.dropdown-link href="{{ url('/') . '#art-info' }}"> Art Exhibition
-                        </x-front.dropdown-link>
+                        {{-- <x-front.dropdown-link href="{{ url('/') . '#art-info' }}"> Art Exhibition
+                        </x-front.dropdown-link> --}}
                         <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="#" target="_"> Leadership, Mentoring &amp; Workshop
@@ -83,8 +83,8 @@
 
                     <x-front.dropdown-base name="Community Projects">
                         <div class="flex flex-col">
-                            <x-front.dropdown-link href="{{ url('/') . '#art-info' }}"> Art Exhibition
-                            </x-front.dropdown-link>
+                            {{-- <x-front.dropdown-link href="{{ url('/') . '#art-info' }}"> Art Exhibition
+                            </x-front.dropdown-link> --}}
                             <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="#" target="_"> Leadership, Mentoring &amp; Workshop
