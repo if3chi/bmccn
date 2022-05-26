@@ -42,6 +42,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'bkup' => [
+            'driver' => 'local',
+            'root' => storage_path('bk/'),
+            'url' => env('APP_URL').'/bkups',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
@@ -67,7 +74,7 @@ return [
     */
 
     'links' => [
-        public_path('storage') => storage_path('app/public'),
+        public_path('bkups') => storage_path('bk/'),
     ],
 
 ];

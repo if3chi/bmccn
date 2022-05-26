@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire\Front;
 
-use App\Mail\ContactUs as ContactUsMail;
 use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactUs as ContactUsMail;
 
 class ContactUs extends Component
 {
@@ -21,7 +21,8 @@ class ContactUs extends Component
     public function sendMessage()
     {
         $validatedData = $this->validate();
-        Mail::to('care@bmccn.org')->queue(new ContactUsMail($validatedData));
+        Mail::to('care@bmccn.org')
+            ->queue(new ContactUsMail($validatedData));
         $this->reset(['fullname', 'email', 'message']);
 
         $this->notify([
