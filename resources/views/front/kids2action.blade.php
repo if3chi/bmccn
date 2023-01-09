@@ -9,25 +9,9 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-wrap justify-center mt-12">
-                <div class="w-full px-4 space-y-3 text-center lg:w-3/12">
-
-                    {{-- <x-paypal-btn href="{{ paypalLink('bmccn') }}"
-                        class="justify-center shadow-xl" />
-
-                    <h6 class="mt-5 text-xl font-semibold text-white">
-                        Support the change
-                    </h6> --}}
-
-                    {{-- <p class="mt-2 mb-4 text-gray-50">
-                       Click the button to support our creative writing competition.
-                    </p> --}}
-                </div>
-            </div>
     </section>
 
-    <section class="block py-24 bg-white lg:pt-0 fade-in" {{-- style="background-image: url(https://static.intercomassets.com/ember/assets/images/messenger-backgrounds/background-1-99a36524645be823aabcd0e673cb47f8.png)" --}}>
-
+    <section class="block py-24 bg-white lg:pt-0 fade-in">
         <div class="container px-4 pt-6 mx-auto lg:pt-12">
             <div class="flex flex-wrap items-center mt-24">
                 <div class="w-full px-4 ml-auto mr-auto md:w-5/12">
@@ -56,9 +40,6 @@
                             <h4 class="text-xl font-bold text-white">
                                 KIDS2ACTION CAMPAIGN
                             </h4>
-                            {{-- <p class="mt-2 font-normal text-white text-md">
-                                KIDS2ACTION CAMPAIGN
-                            </p> --}}
                         </blockquote>
                     </div>
                 </div>
