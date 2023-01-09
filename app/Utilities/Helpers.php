@@ -15,6 +15,14 @@ if (!function_exists('setFlyer')) {
     }
 }
 
+if (!function_exists('setKids2ActionImage')) {
+
+    function setKids2ActionImage()
+    {
+        return asset('images/kids2action.jpg');
+    }
+}
+
 if (!function_exists('textNl2br')) {
 
     function textNl2br($text)

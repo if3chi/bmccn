@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::view('/creative-writing', 'front.creative-writing')->name('creative-writing');
+Route::view('/kids2action', 'front.kids2action')->name('kids2action');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
