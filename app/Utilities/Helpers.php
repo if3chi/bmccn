@@ -15,6 +15,14 @@ if (!function_exists('setFlyer')) {
     }
 }
 
+if (!function_exists('setCreativeWritingFlyer')) {
+
+    function setCreativeWritingFlyer()
+    {
+        return asset('images/creativeWriting.jpeg');
+    }
+}
+
 if (!function_exists('setKids2ActionImage')) {
 
     function setKids2ActionImage()
