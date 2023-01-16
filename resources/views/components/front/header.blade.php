@@ -31,7 +31,7 @@
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
                         </x-front.dropdown-link>
-                        <x-front.dropdown-link href="#" target="_"> Leadership, Mentoring &amp; Workshop
+                        <x-front.dropdown-link href="{{ route('workshop') }}"> Leadership, Mentoring &amp; Workshop
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                         </x-front.dropdown-link>
@@ -88,7 +88,7 @@
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
                             </x-front.dropdown-link>
-                            <x-front.dropdown-link href="#" target="_"> Leadership, Mentoring &amp; Workshop
+                            <x-front.dropdown-link href="{{ route('workshop') }}"> Leadership, Mentoring &amp; Workshop
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                             </x-front.dropdown-link>
