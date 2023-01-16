@@ -31,7 +31,7 @@
             <div class="flex flex-wrap items-center">
                 <div class="w-full ml-auto mr-auto md:w-5/12">
                     <div class="flex flex-col w-full min-w-0 my-6 break-words rounded-lg shadow-lg bg-blue-black">
-                        <img alt="..." src="{{ setCreativeWritingFlyer() }}"
+                        <img alt="Creative Writting flyer" src="{{ setCreativeWritingFlyer() }}"
                             class="w-full align-middle rounded-lg">
                     </div>
                 </div>
