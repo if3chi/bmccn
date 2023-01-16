@@ -72,55 +72,99 @@
 
     <section class="pb-20 -mt-24 -mb-2 font-sans bg-white fade-in" id="art-info">
         <div class="pt-16 bg-white lg:py-24">
-            <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
-                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div class="relative lg:-my-8">
-                        <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
-                        <div class="w-full max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-                            <div
-                                class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                                <img class="object-cover shadow-inner lg:h-full lg:w-full" src="{{ setFlyer() }}"
-                                    alt="Achievers awards 2023 flyer">
+            <div class="bg-blue-black">
+                <div class="pb-16 bg-blue-black lg:pb-8 lg:z-10 lg:relative">
+                    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+                        <div class="relative lg:-my-8">
+                            <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
+                            <div class="w-full max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                                <div
+                                    class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                    <img class="object-cover shadow-inner lg:h-full lg:w-full" src="{{ setFlyer() }}"
+                                        alt="Achievers awards 2023 flyer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                            <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                                <blockquote>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white opacity-25"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                                            <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                                            <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                                            <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                                        </svg>
+                                        <p class="mt-4 text-2xl font-medium text-white">Open to all young artists,
+                                            sculptors
+                                            and innovators in Ghana and Nigeria.</p>
+                                    </div>
+                                    <footer class="mt-2">
+                                        <p class="text-base font-medium text-white">NB: Send all application materials
+                                            to <a href="mailto:info@bmccn.org">info@bmccn.org</a></p>
+                                        <p class="text-base font-medium text-blue-100">Application deadline
+                                            1st Mar, 2023.</p>
+                                        <a href="mailto:info@bmccn.org"
+                                            class="inline-flex items-center px-5 py-3 mt-4 text-base font-semibold text-white border border-transparent rounded-md shadow bg-red-950 hover:text-red-950 hover:bg-red-50">
+                                            Submit an entry
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 ml-1"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+                                                </path>
+                                                <path d="M3 6l9 6l9 -6"></path>
+                                                <path d="M15 18h6"></path>
+                                                <path d="M18 15l3 3l-3 3"></path>
+                                            </svg>
+                                        </a>
+                                    </footer>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-                        <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-                            <blockquote>
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white opacity-25"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
-                                        <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
-                                        <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
-                                        <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
-                                    </svg>
-                                    <p class="mt-4 text-2xl font-medium text-white">Open to all young artists, sculptors
-                                        and innovators in Ghana and Nigeria.</p>
+                </div>
+                <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
+                    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+                        <div class="mt-0 lg:mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                            <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                                <blockquote class="flex justify-end">
+                                    <footer class="mt-2">
+                                        <a href="{{ route('creative-writing') }}"
+                                            class="inline-flex items-center px-5 py-3 mt-4 text-base font-semibold text-white border border-transparent rounded-md shadow bg-red-950 hover:text-red-950 hover:bg-red-50">
+                                            Submit an essay
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 ml-1"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+                                                </path>
+                                                <path d="M3 6l9 6l9 -6"></path>
+                                                <path d="M15 18h6"></path>
+                                                <path d="M18 15l3 3l-3 3"></path>
+                                            </svg>
+                                        </a>
+                                        <p class="mb-2 text-base font-medium text-blue-100">Application deadline
+                                            20th Feb, 2023.</p>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="relative lg:-my-8">
+                            <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-blue-black h-1/2 lg:hidden">
+                            </div>
+                            <div class="w-full max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                                <div
+                                    class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                    <img class="object-cover shadow-inner lg:h-full lg:w-full"
+                                        src="{{ setCreativeWritingFlyer() }}" alt="Creative writing 2023 flyer">
                                 </div>
-                                <footer class="mt-2">
-                                    <p class="text-base font-medium text-white">NB: Send all application materials to <a
-                                            href="mailto:info@bmccn.org">info@bmccn.org</a></p>
-                                    <p class="text-base font-medium text-blue-100">Application deadline
-                                        1st Mar, 2023.</p>
-                                    <a href="mailto:info@bmccn.org"
-                                        class="inline-flex items-center px-5 py-3 mt-4 text-base font-semibold text-white border border-transparent rounded-md shadow bg-red-950 hover:text-red-950 hover:bg-red-50">
-                                        Submit an entry
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 ml-1"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
-                                            </path>
-                                            <path d="M3 6l9 6l9 -6"></path>
-                                            <path d="M15 18h6"></path>
-                                            <path d="M18 15l3 3l-3 3"></path>
-                                        </svg>
-                                    </a>
-                                </footer>
-                            </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
