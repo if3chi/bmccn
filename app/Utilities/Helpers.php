@@ -7,6 +7,14 @@ if (!function_exists('setAboutImage')) {
         return asset('images/about.jpg');
     }
 }
+if (!function_exists('setSchoolImg')) {
+
+    function setSchoolImg(string $imgName = '1'): string
+    {
+        return asset("images/schools/$imgName.jpg");
+    }
+}
+
 if (!function_exists('setFlyer')) {
 
     function setFlyer()
