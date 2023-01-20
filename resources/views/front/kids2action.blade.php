@@ -16,7 +16,7 @@
             <div class="flex flex-wrap items-center mt-24">
                 <div class="w-full px-4 ml-auto mr-auto md:w-5/12">
                     <h3 class="mt-12 mb-2 text-3xl font-bold leading-normal md:mt-0 text-blue-950">
-                        Kids 2 Action
+                        Kids2Action
                     </h3>
 
                     <p class="mt-0 mb-4 text-lg font-normal leading-relaxed text-justify text-gray-700">
