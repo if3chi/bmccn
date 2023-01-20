@@ -3,7 +3,7 @@
         <div class="container px-4 py-16 mx-auto">
             <div class="flex flex-wrap justify-center text-center">
                 <div class="w-full px-4 lg:w-6/12">
-                    <h2 class="text-4xl font-semibold text-white">Leadership, Mentoring &amp; Workshop</h2>
+                    <h2 class="text-4xl font-semibold text-white">Leadership &amp; Mentoring Workshop</h2>
                     <p class="mt-4 mb-4 text-lg leading-relaxed text-gray-50">
                     </p>
                 </div>
