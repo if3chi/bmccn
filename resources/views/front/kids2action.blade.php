@@ -23,8 +23,16 @@
                         Focuses on Environmental education and Climate change.
                     </p>
                     <p class="mt-0 mb-4 text-lg font-normal leading-relaxed text-justify text-gray-700">
-                        Our campaign educates young people across Nigeria and Ghana about the effects of climate change
-                        and the importance of waste management/recycling.
+                        Our campaign educates young people across Nigeria and Ghana about our environment, highlighting
+                        the importance of waste management, recycling, smart agriculture and climate change. We
+                        encourage young people to learn more about the big issues affecting our environment locally and
+                        globally. This includes promoting environmental awareness and action on issues such as litter,
+                        air pollution, healthy food, protection of green spaces.
+                    </p>
+                    <p class="mt-0 mb-4 text-lg font-normal leading-relaxed text-justify text-gray-700">
+                        The Kids2Action campaign recognizes that children are a key factor in driving awareness to their
+                        households; hence our campaign provides a sustainable solution which will get young people
+                        excited and participating.
                     </p>
                 </div>
                 <div class="w-full px-4 ml-auto mr-auto md:w-4/12">
