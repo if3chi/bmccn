@@ -7,6 +7,23 @@ if (!function_exists('setAboutImage')) {
         return asset('images/about.jpg');
     }
 }
+
+if (!function_exists('setStemImage')) {
+
+    function setStemImage()
+    {
+        return asset('images/stem4girls.jpg');
+    }
+}
+
+if (!function_exists('setStemUpImages')) {
+
+    function setStemUpImages()
+    {
+        return array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5, 6]);
+    }
+}
+
 if (!function_exists('setSchoolImg')) {
 
     function setSchoolImg(string $imgName = '1'): string

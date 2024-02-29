@@ -25,7 +25,7 @@
 
                 <x-front.nav-link href="/">Home</x-front.nav-link>
                 <x-front.nav-link href="{{ url('/') . '#about' }}">About</x-front.nav-link>
-                <x-front.nav-link href="{{ route('art-gallery')}}">Art Gallery</x-front.nav-link>
+                <x-front.nav-link href="{{ route('art-gallery') }}">Art Gallery</x-front.nav-link>
                 <x-front.dropdown url="#" name="Community Projects">
                     <div>
                         <x-front.dropdown-link href="{{ url('/') . '#art-info' }}"> Art Exhibition
@@ -37,6 +37,8 @@
                         <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="{{ route('kids2action') }}"> KIDS2ACTION CAMPAIGN
+                        </x-front.dropdown-link>
+                        <x-front.dropdown-link href="{{ route('stem4girls') }}"> STEPUP Stem 4 Girls
                         </x-front.dropdown-link>
                     </div>
 
@@ -83,7 +85,8 @@
                     <a href="{{ url('/') . '#about' }}"
                         class="block px-3 py-2 text-base font-medium rounded-md text-blue-black hover:bg-gray-50">About</a>
                     <a href="{{ route('art-gallery') }}"
-                        class="block px-3 py-2 text-base font-medium rounded-md text-blue-black hover:bg-gray-50">Art Gallery</a>
+                        class="block px-3 py-2 text-base font-medium rounded-md text-blue-black hover:bg-gray-50">Art
+                        Gallery</a>
 
                     <x-front.dropdown-base name="Community Projects">
                         <div class="flex flex-col">
@@ -96,6 +99,8 @@
                             <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="{{ route('kids2action') }}"> KIDS2ACTION CAMPAIGN
+                            </x-front.dropdown-link>
+                            <x-front.dropdown-link href="{{ route('stem4girls') }}"> STEPUP Stem 4 Girls
                             </x-front.dropdown-link>
                         </div>
 

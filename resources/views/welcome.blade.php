@@ -77,15 +77,15 @@
                     <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
                         <div class="relative lg:-my-8">
                             <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
-                            <div class="w-full max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                            <div class="w-full max-w-md mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
                                 <div
                                     class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                                     <img class="object-cover shadow-inner lg:h-full lg:w-full" src="{{ setFlyer() }}"
-                                        alt="Achievers awards 2023 flyer">
+                                        alt="Creative writing 2024 flyer">
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                        <div class="mt-12 lg:m-0 lg:col-span-2">
                             <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
                                 <blockquote>
                                     <div>
@@ -106,7 +106,7 @@
                                         <p class="text-base font-medium text-white">NB: Send all application materials
                                             to <a href="mailto:info@bmccn.org">info@bmccn.org</a></p>
                                         <p class="text-base font-medium text-blue-100">Application deadline
-                                            1st Mar, 2023.</p>
+                                            29th Feb, 2024.</p>
                                         <a href="mailto:info@bmccn.org"
                                             class="inline-flex items-center px-5 py-3 mt-4 text-base font-semibold text-white border border-transparent rounded-md shadow bg-red-950 hover:text-red-950 hover:bg-red-50">
                                             Submit an entry
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
+                {{-- <div class="pb-16 bg-blue-black lg:pb-0 lg:z-10 lg:relative">
                     <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
                         <div class="mt-0 lg:mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
                             <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
@@ -161,13 +161,13 @@
                             <div class="w-full max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
                                 <div
                                     class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                                    <img class="object-cover shadow-inner lg:h-full lg:w-full"
-                                        src="{{ setCreativeWritingFlyer() }}" alt="Creative writing 2023 flyer">
+                                    <img class="object-cover shadow-inner lg:h-full lg:w-full" src="{{ setFlyer() }}"
+                                        alt="Creative writing 2023 flyer">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

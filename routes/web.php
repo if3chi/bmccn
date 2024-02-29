@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::view('/art-gallery', 'front.art-gallery')->name('art-gallery');
 Route::view('/creative-writing', 'front.creative-writing')->name('creative-writing');
 Route::view('/kids2action', 'front.kids2action')->name('kids2action');
+Route::view('/stem4girls', 'front.stem4girls')->name('stem4girls');
 Route::view('/leardership-workshop', 'front.workshop')->name('workshop');
 
 Route::get('/dashboard', function () {
