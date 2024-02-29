@@ -34,7 +34,7 @@
                                 <polygon points="-30,95 583,95 583,65" class="fill-current text-blue-black"></polygon>
                             </svg>
                             <h4 class="text-xl font-bold text-white">
-                                Step up - Stem Education
+                                STEPUP STEM4Girls
                             </h4>
                             <p class="mt-2 font-normal text-white text-md">
                                 In collaboration with <a
