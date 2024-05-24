@@ -10,11 +10,31 @@
             </div>
     </section>
 
-    <section class="block py-24 bg-white lg:pt-0 fade-in">
-        <div class="container px-4 pt-6 mx-auto lg:pt-12">
-            <div class="flex flex-wrap items-center mt-24">
-                <x-art-card />
+    <section class="block pb-24 bg-white lg:pt-0 fade-in">
+        <div class="container px-4 mx-auto lg:pt-12">
+            <div class="flex flex-wrap items-center mt-12">
+                <!-- <x-art-card /> -->
+                <x-art-project-gallery />
             </div>
         </div>
     </section>
+
+@push('styles')
+    <!-- Test Styles -->
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+    </style>
+@endpush
 </x-front-layout>
+
