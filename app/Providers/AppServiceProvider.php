@@ -2,28 +2,24 @@
 
 namespace App\Providers;
 
-use Livewire\Component;
 use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Component;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot(UrlGenerator $url)
+    public function boot(UrlGenerator $url): void
     {
         if (env('APP_ENV') === 'production') {
             $url->forceScheme('https');

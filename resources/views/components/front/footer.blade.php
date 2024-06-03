@@ -33,7 +33,7 @@
                         <ul class="list-unstyled">
                             <li>
                                 <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-blue-black"
-                                    href="{{ url('/').'#about' }}">About Us</a>
+                                    href="{{ url('/') . '#about' }}">About Us</a>
                             </li>
                             <li>
                                 <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-blue-black"
@@ -49,7 +49,7 @@
                             </li>
                             <li>
                                 <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-blue-black"
-                                    href="{{ route('workshop') }}">Leadership, Mentoring &amp; Workshop</a>
+                                    href="{{ route('academy') }}">Leadership, Mentoring &amp; Academy</a>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +67,7 @@
                             </li>
                             <li>
                                 <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-blue-black"
-                                    href="{{ url('/').'#contact-us' }}">Contact Us</a>
+                                    href="{{ url('/') . '#contact-us' }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

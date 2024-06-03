@@ -27,11 +27,11 @@
                 <x-front.nav-link href="{{ url('/') . '#about' }}">About</x-front.nav-link>
                 <x-front.dropdown url="#" name="Community Projects">
                     <div>
+                        <x-front.dropdown-link href="{{ route('academy') }}"> Leadership &amp; Mentoring Academy
+                        </x-front.dropdown-link>
                         <x-front.dropdown-link href="{{ route('art-projects') }}"> Art Projects
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
-                        </x-front.dropdown-link>
-                        <x-front.dropdown-link href="{{ route('workshop') }}"> Leadership &amp; Mentoring Workshop
                         </x-front.dropdown-link>
                         <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                         </x-front.dropdown-link>
@@ -86,11 +86,11 @@
 
                     <x-front.dropdown-base name="Community Projects">
                         <div class="flex flex-col">
+                            <x-front.dropdown-link href="{{ route('academy') }}"> Leadership &amp; Mentoring Academy
+                            </x-front.dropdown-link>
                             <x-front.dropdown-link href="{{ route('art-projects') }}"> Art Projects
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="https://bmywa.com" target="_blank"> BMYWA
-                            </x-front.dropdown-link>
-                            <x-front.dropdown-link href="{{ route('workshop') }}"> Leadership &amp; Mentoring Workshop
                             </x-front.dropdown-link>
                             <x-front.dropdown-link href="creative-writing"> Creative Writing UK
                             </x-front.dropdown-link>
