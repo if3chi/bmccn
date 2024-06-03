@@ -17,7 +17,7 @@
          <div class="relative lg:pl-3">
              <template x-for="(video, index) in videos" :key="index">
                  <div x-show="activeVideo === index" class="relative" style="padding-bottom: 46.25%;">
-                     <iframe :src="video + '?autoplay=1'" frameborder="0"
+                     <iframe :src="video" frameborder="0"
                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                          class="absolute inset-0 w-full h-full rounded-lg shadow-md"></iframe>
                  </div>
@@ -92,8 +92,10 @@
                  this.activeVideo = (this.activeVideo === this.videos.length - 1) ? 0 : this.activeVideo + 1;
                  this.updateIframe();
              },
-             updateIframe() {
+             updateIframe(autoplay = false) {
                  const iframe = this.$el.querySelector('iframe');
+                 const autoplayParam = autoplay ? '?autoplay=1' : '?autoplay=0';
+                 iframe.src = this.videos[this.activeVideo] + autoplayParam;
                  iframe.src = this.videos[this.activeVideo];
              }
          }
