@@ -24,6 +24,17 @@ if (!function_exists('setStemUpImages')) {
     }
 }
 
+if (!function_exists('setStemUpImagesByYear')) {
+
+    function setStemUpImagesByYear()
+    {
+        return [
+            '2024' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5, 6]),
+            '2023' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3,]),
+        ];
+    }
+}
+
 if (!function_exists('setSchoolImg')) {
 
     function setSchoolImg(string $imgName = '1'): string
