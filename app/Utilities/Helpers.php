@@ -1,5 +1,102 @@
 <?php
 
+if (!function_exists('getSchoolImgs')) {
+    function getSchoolImgs()
+    {
+        return [
+            '2024' => [
+                [
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_1',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_2',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_3',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_4',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_5',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_6',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_7',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_8',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_9',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_10',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_11',
+                ],[
+                    'title' => "Osu Basic School, Accra, Ghana.",
+                    'src' => 'osu_12',
+                ],
+            ],
+            '2023' => [
+                [
+                    'title' => "Accra New Town Experimental School, Accra, Ghana.",
+                    'src' => '1',
+                ],
+                [
+                    'title' => "Accra New Town Experimental School, Accra, Ghana.",
+                    'src' => '2',
+                ],
+                [
+                    'title' => "Accra New Town Experimental School, Accra, Ghana.",
+                    'src' => '3',
+                ],
+                [
+                    'title' => "Gracewell Academy Surulere, Lagos, Nigeria.",
+                    'src' => 'a',
+                ],
+                [
+                    'title' => "Gracewell Academy Surulere, Lagos, Nigeria.",
+                    'src' => 'b',
+                ],
+                [
+                    'title' => "Gracewell Academy Surulere, Lagos, Nigeria.",
+                    'src' => 'c',
+                ],
+                [
+                    'title' => "Gudmerc Academy, Abuja, Nigeria.",
+                    'src' => 'gudmerc2',
+                ],
+                [
+                    'title' => "Gudmerc Academy, Abuja, Nigeria.",
+                    'src' => 'gudmerc1',
+                ],
+                [
+                    'title' => "Gudmerc Academy, Abuja, Nigeria.",
+                    'src' => 'gudmerc',
+                ],
+                [
+                    'title' => "KARU Government Secondary School, Karu Abuja, Nigeria.",
+                    'src' => 'karu2',
+                ],
+                [
+                    'title' => "KARU Government Secondary School, Karu Abuja, Nigeria.",
+                    'src' => 'karu',
+                ],
+                [
+                    'title' => "KARU Government Secondary School, Karu Abuja, Nigeria.",
+                    'src' => 'karu1',
+                ],
+            ],
+        ];
+    }
+}
+
 if (!function_exists('setAboutImage')) {
 
     function setAboutImage()
@@ -20,7 +117,7 @@ if (!function_exists('setStemUpImages')) {
 
     function setStemUpImages()
     {
-        return array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5, 6]);
+        return array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12]);
     }
 }
 
@@ -29,8 +126,8 @@ if (!function_exists('setStemUpImagesByYear')) {
     function setStemUpImagesByYear()
     {
         return [
-            '2024' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5, 6]),
-            '2023' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3,]),
+            '2024' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [1, 2, 3, 4, 5]),
+            '2023' => array_map(fn ($img) => asset("images/stepup4girls/$img.jpg"), [7, 8, 9, 10, 11, 12]),
         ];
     }
 }

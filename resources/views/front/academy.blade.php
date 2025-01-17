@@ -12,32 +12,63 @@
 
     <section class="block py-24 bg-white lg:pt-0 fade-in">
         <div class="container px-4 pt-6 mx-auto lg:pt-12">
-            <div class="flex flex-wrap items-center mt-24">
-                <x-img title="Accra New Town Experimental School, Accra, Ghana." src="{{ setSchoolImg() }}"
-                    alt="Photo with school children" />
-                <x-img title="Accra New Town Experimental School, Accra, Ghana." src="{{ setSchoolImg('2') }}"
-                    alt="Photo with school children" />
-                <x-img title="Accra New Town Experimental School, Accra, Ghana." src="{{ setSchoolImg('3') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gracewell Academy Surulere, Lagos, Nigeria." src="{{ setSchoolImg('a') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gracewell Academy Surulere, Lagos, Nigeria." src="{{ setSchoolImg('b') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gracewell Academy Surulere, Lagos, Nigeria." src="{{ setSchoolImg('c') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gudmerc Academy, Abuja, Nigeria." src="{{ setSchoolImg('gudmerc2') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gudmerc Academy, Abuja, Nigeria." src="{{ setSchoolImg('gudmerc1') }}"
-                    alt="Photo with school children" />
-                <x-img title="Gudmerc Academy, Abuja, Nigeria." src="{{ setSchoolImg('gudmerc') }}"
-                    alt="Photo with school children" />
-                <x-img title="KARU Government Secondary School, Karu Abuja, Nigeria." src="{{ setSchoolImg('karu2') }}"
-                    alt="Photo with school children" />
-                <x-img title="KARU Government Secondary School, Karu Abuja, Nigeria." src="{{ setSchoolImg('karu') }}"
-                    alt="Photo with school children" />
-                <x-img title="KARU Government Secondary School, Karu Abuja, Nigeria." src="{{ setSchoolImg('karu1') }}"
-                    alt="Photo with school children" />
+            <!-- Tabs for categories -->
+            <div class="tabs flex justify-center -mb-2">
+                @foreach (array_keys(getSchoolImgs()) as $year)
+                    <button class="tab-button px-4 py-2 mx-1 font-bold border-2 border-transparent rounded-md shadow-md text-base
+                        text-blue-950 hover:text-white hover:bg-blue-black hover:border-white" data-category="{{ $year }}">
+                        {{ $year }}
+                    </button>
+                @endforeach
+            </div>
+
+            <!-- Gallery container -->
+            <div class="gallery">
+                @foreach (getSchoolImgs() as $year => $images)
+                    <div class="gallery-category hidden" data-category="{{ $year }}">
+                        <div class="flex flex-wrap items-center">
+                            @foreach ($images as $image)
+                                <x-img title="{{ $image['title'] }}" src="{{ setSchoolImg($image['src']) }}" alt="Photo with school children" />
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
+
+    @push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const categories = document.querySelectorAll('.gallery-category');
+
+            if (categories.length > 0 && tabButtons.length > 0) {
+                categories[0].classList.remove('hidden');
+                tabButtons[0].classList.add('bg-blue-black', 'text-white');
+            }
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+
+                    categories.forEach(cat => {
+                        cat.classList.add('hidden');
+                    });
+
+                    const selectedCategory = document.querySelector(`.gallery-category[data-category="${category}"]`);
+                    if (selectedCategory) {
+                        selectedCategory.classList.remove('hidden');
+                    }
+
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('bg-blue-black', 'text-white');
+                    });
+
+                    button.classList.add('bg-blue-black', 'text-white');
+                });
+            });
+        });
+    </script>
+    @endpush
 </x-front-layout>
